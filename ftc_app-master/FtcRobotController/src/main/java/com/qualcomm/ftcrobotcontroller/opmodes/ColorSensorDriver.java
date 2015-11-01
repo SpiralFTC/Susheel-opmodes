@@ -56,7 +56,7 @@ public class ColorSensorDriver extends LinearOpMode {
   @Override
   public void runOpMode() throws InterruptedException {
     hardwareMap.logDevices();
-
+//
     cdim = hardwareMap.deviceInterfaceModule.get("dim");
     switch (device) {
       case HITECHNIC_NXT:
