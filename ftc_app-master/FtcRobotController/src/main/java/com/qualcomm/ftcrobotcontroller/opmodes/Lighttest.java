@@ -2,6 +2,8 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.hardware.HiTechnicNxtLightSensor;
+import com.qualcomm.robotcore.hardware.LegacyModule;
+import com.qualcomm.robotcore.hardware.LightSensor;
 
 /**
  * Created by heel7_000 on 10/29/2015.
@@ -12,7 +14,8 @@ public class Lighttest extends LinearOpMode {
     DcMotor rightMotor;
     DcMotor leftMotor1;
     DcMotor rightMotor1;
-    HiTechnicNxtLightSensor light;
+    LightSensor light;
+    LegacyModule yomama;
 
     @Override
 
@@ -21,7 +24,8 @@ public class Lighttest extends LinearOpMode {
         rightMotor = hardwareMap.dcMotor.get("rightMotor");
         leftMotor1 = hardwareMap.dcMotor.get("leftMotor1");
         rightMotor1 = hardwareMap.dcMotor.get("rightMotor1");
-
+        yomama = hardwareMap.legacyModule.get("lkjaf");
+        light = hardwareMap.lightSensor.get("nxt");
 
 
         int i = 1;
